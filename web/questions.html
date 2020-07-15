@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Preferences</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color:#ffff4d;">
+    <center>
+        <form action="dbms" method="post">
+            Enter First Name:<input type="text" name="fname"/><br><br> 
+        Enter Last Name:<input type="text" name="lname"/><br><br>
+        <p style= "font-family:Consolas;font-size:40px">Your Preferences:</p><br>
+        <ol style="text-align:center;list-style-position:inside;">
+            <li>Your Maximum Budget(in Rs.): &nbsp;<input type="text" name="bname"/></li><br><br>
+            <li><label for="car4">What is your preferred car segment? &nbsp;</label>
+<select id="car4" name="combo4">
+  <option value="Choose an option">Any</option>
+  <option value="Sedan">Sedan</option>
+  <option value="Hatchback">Hatchback</option>
+  <option value="SUV">SUV</option>
+  <option value="MPV">MPV</option>	
+  <option value="Supermini">Supermini</option>
+  <option value="Minivan">Minivan</option>
+  <option value="Subcompact">Subcompact</option>
+  <option value="2-door Coupe">2-door Coupe</option>
+  <option value="2-door Roadster">2-door Roadster</option>
+</select></li><br><br>
+<li><label for="car5">What is the number of seats you prefer in your car?&nbsp;</label>
+<select id="car5" name="combo5">
+  <option value=0>Any</option>
+  <option value=2>2</option>
+  <option value=4>4</option>
+  <option value=5>5</option>
+  <option value=6>6</option>
+  <option value=7>7</option>
+  <option value=8>8</option>
+</select></li><br><br>
+<li><label for="car1">What is more important to you,Price or Engine Capacity?&nbsp;</label>
+<select id="car1" name="combo1">
+  <option value=1>Price(in Rs.)</option>
+  <option value=2>Engine(in cc)</option>
+</select><br><br>
+<ul>
+        <li>And by how much?<br><br>
+        <input type="radio" name="ques1" value=3.0 />More Important
+        <input type="radio" name="ques1" value=2.0 />Somewhat Important
+        <input type="radio" name="ques1" value=1.0 checked/>Equally Important
+        </li>
+</ul>
+</li>
+<br><br>
+<li><label for="car2">What is more important to you,Engine Capacity or Mileage?&nbsp;</label>
+<select id="car2" name="combo2">
+  <option value=1>Engine(in cc)</option>
+  <option value=2>Mileage(in kmpl)</option>
+</select><br><br>
+<ul>
+    <li> And by how much?<br><br>
+        <input type="radio" name="ques2" value=3.0 />More Important
+        <input type="radio" name="ques2" value=2.0 />Somewhat Important
+        <input type="radio" name="ques2" value=1.0 checked/>Equally Important
+    </li></ul></li><br><br>
+    <li> <label for="car3">What is more important to you,Mileage or Price?&nbsp;</label>
+<select id="car3" name="combo3">
+  <option value=1>Mileage(in kmpl)</option>
+  <option value=2>Price(in Rs.)</option>
+</select><br><br>
+<ul>
+        <li>And by how much?<br><br>
+        <input type="radio" name="ques3" value=3.0 />More Important
+        <input type="radio" name="ques3" value=2.0 />Somewhat Important
+        <input type="radio" name="ques3" value=1.0 checked/>Equally Important
+        </li></ul></li><br><br>
+        </ol>
+        <input type="submit" value="Click to Submit Responses"/>
+        </form>
+    </center>
+    </body>
+</html>
